@@ -1,0 +1,34 @@
+.skills__text, .projects__text h1 {
+    font-family: 'Pacifico', sans-serif;
+}
+.project__link, .miniproject__link{
+    text-decoration: none;
+    color: black;
+}
+.project__link:hover, .miniproject__link:hover{
+    color:white;
+}
+
+//theme light
+
+
+//theme dark
+
+
+body[data-theme=dark] .miniproject__button, body[data-theme=dark] .project__button{
+    background-color:  rgba(0, 46, 148, 0.5);
+    
+}
+body[data-theme=dark] .project__link, body[data-theme=dark] .miniproject__link {
+    color: white;
+}
+//skills
+
+
+body[data-theme=dark] .skills__card, body[data-theme=dark] .skills__content{
+    background-color: rgba(0, 46, 148, 0.5);
+}
+
+body[data-theme=dark] .skills__name,body[data-theme=dark] .skills__content{
+    background-color: rgba(0, 46, 148, 0.5);
+}

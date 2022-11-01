@@ -1,0 +1,70 @@
+body{
+  background-image: url("https://i.pinimg.com/564x/99/f9/5e/99f95e5a4b24adeeca00cfac10806a43.jpg");
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body[data-theme=light] {
+  background-image: url("https://i.pinimg.com/564x/99/f9/5e/99f95e5a4b24adeeca00cfac10806a43.jpg");
+  color: black;
+  transition: background-image 5ms ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*https://i.pinimg.com/564x/c2/d4/64/c2d464c4ab403eee7b95360376fb28bd.jpg
+https://i.pinimg.com/564x/ab/4c/66/ab4c6630fc6504ad45228a84cedf393a.jpg*/
+
+body[data-theme=dark] {
+  background-image: url("https://i.pinimg.com/564x/ab/4c/66/ab4c6630fc6504ad45228a84cedf393a.jpg");
+  color:white;
+  transition: background-image 5ms ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body[data-theme=dark] a{
+  color: white;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Lora';
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,11 @@
+.intro{
+    background-color:rgba(220, 221, 225,0.6);
+    border-radius:15% 0;
+    padding: 2vh 0;
+}
+.intro h1{
+    color: #083AA9;
+}
+.typical{
+    color: #d9376e
+}
