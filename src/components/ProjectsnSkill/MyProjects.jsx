@@ -22,8 +22,9 @@ function RenderImg({ project }) {
       delay={500}
       duration={1000}
     >
+   
       <Card style={{ backgroundColor: "rgba(253, 121, 168,0.1)" }}>
-        <div className="row">
+        <div className="row animate"  data-animate="slideInLeft 2s">
           <div className="col-8">
             <img
               alt="Card cap"
@@ -86,13 +87,10 @@ class Projects extends Component {
 
     return (
       <div className="container mt-5 projects__text" id="myprojects">
-        <h1>FEATURED</h1>
-        <div className="row mt-5">{menu}</div>
-        <h1 className="mt-5"> Mini Projects</h1>
-        <div className="row">
-          <MiniProject />
+        <h1  className="animate project__title"
+          data-animate="tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both">FEATURED</h1>
+        <div className="row menuproject">{menu}</div>
         </div>
-      </div>
     );
   }
 }

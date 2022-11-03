@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import {
   Collapse,
   Navbar,
@@ -48,10 +48,20 @@ export default function Header() {
   //nav collapse
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  //scroll
+  const [fixedNavbar, setFixedNavbar] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [fixedNavbar]);
+
+  const handleScroll = () => {
+    setFixedNavbar(window.pageYOffset > 80);
+  };
   return (
-    <div className="head">
+    <div>
     <div className="container">
-     <Navbar expand="md">
+     <Navbar expand="md"  fixed="top"  className="head" container="md" >
         <NavbarBrand href="#home" className ="navbar__brand">  Minh Tran </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

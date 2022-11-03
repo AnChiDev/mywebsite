@@ -2,10 +2,34 @@
     background-color:rgba(220, 221, 225,0.6);
     border-radius:15% 0;
     padding: 2vh 0;
+ 
 }
 .intro h1{
     color: #083AA9;
 }
 .typical{
-    color: #d9376e
+    color: #d9376e;
+    
 }
+.intro-content h4{
+    text-align: left;
+}
+.intro-content{
+    margin: 5%;
+}
+.hello{
+color: #6F38C5;
+text-align: center;
+}
+.download-button{
+   box-shadow: 5px 10px #888888;
+   margin-bottom: 2%;
+
+}
+.download-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  #aboutme{
+    margin-top: 15vh;
+    margin-bottom: 3%;
+  }

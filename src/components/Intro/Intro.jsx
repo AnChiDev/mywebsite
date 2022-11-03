@@ -10,32 +10,32 @@ class Intro extends Component {
     return (
       <div className="container"  id="aboutme">
         <div className="row mt-5">
-          <div className="col col-10 col-md-4 col-lg-3 mx-auto">
+          <div className="col col-10 col-md-4 col-lg-3 mx-auto animate" data-animate="slideInLeft 2s">
             <CardImg
               src="assets/images/myavatar2.jpg"
               alt="my photo"
               style={{ borderRadius: "50%" }}
+              id="home"
             />
           </div>
      
-          <div className="col col-10 col-md-6 col-lg-7 mx-auto intro">
+          <div className="col col-10 col-md-6 col-lg-7 mx-auto intro animate" data-animate="slideInRight 2s">
           <Fade in timingFn="ease-in-out" duration="3000" delay="200">
       
-            <h1>
+            <h1 >
    
               <Typical
                 steps={["Hi", 1000, "Hi! My name is Minh Tran👋!", 500]}
-                // loop={Infinity}
+                loop={Infinity}
                 wrapper="p"
+              className ="hello"
               />
             </h1>
 
          
-              <div className="intro-content fs-5 text-start " style={{margin:"5%"}}>
+              <div className="intro-content fs-5 text-start ">
                 <p className="mb-8 leading-relaxed text-xl">
 
-                  <br /> 
-                  <br />
                   <br />I enjoy building software that makes peoples' lives
                   easier by writing elegant, performant, and maintainable
                   frontend code. I also love everything that's beautiful and
@@ -62,7 +62,7 @@ class Intro extends Component {
                  
                 <div className="flex">
                 <a href="assets/images/MinhTran.pdf" download={"MinhTran-resume.pdf"}>
-                  <Button variant="primary" size="lg"  style={{ backgroundColor: "#B1AFFF"}}>
+                  <Button  size="lg"  className="download-button" style={{backgroundColor: "#B1AFFF"}}>
                     DOWNLOAD RESUME
                   </Button>
                   </a>

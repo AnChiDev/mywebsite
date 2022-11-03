@@ -36,7 +36,7 @@ function Skill() {
   const mySkill = CONTENTS.map((content)=>{
     return(
         <Fade in>
-    <div key={content.id} className="mb-5 mt-4 ">
+    <div key={content.id} className="mb-5 ">
        
         <Card className="skills__content" >
                 <CardBody>
@@ -52,17 +52,20 @@ function Skill() {
   //"Skills can be taught, personality is inherent". I prefer to keep learning, continue challenging myself, and do interesting things that matter.
   return (
     <div className="container" id="skills">
-      <div className="row mt-5 skills__text">
-        <h2> My Skills</h2>
+      <div className="row skills__title">
+        <h2  className="animate"
+          data-animate="tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both"> MY SKILLS</h2>
       </div>
-      <div className="row mt-5">
+      <div className="row">
         <div className="col col-3 col-md-4 col-lg-5">
-            <div className="row">
+            <div className="row animate" data-animate="slideInLeft 2s">
                {icon} 
             </div>
             </div>
         <div className="col col-9 col-md-8 col-lg-7">
+        <div className ="row  animate myskill" data-animate="SlideInRight 3s">
             {mySkill}
+            </div>
         </div>
       </div>
     </div>

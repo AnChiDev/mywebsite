@@ -1,5 +1,6 @@
-.skills__text, .projects__text h1 {
+.skills__title, .project__title , .miniproject__title{
     font-family: 'Pacifico', sans-serif;
+    margin: 5% 0;
 }
 .project__link, .miniproject__link{
     text-decoration: none;
@@ -8,7 +9,12 @@
 .project__link:hover, .miniproject__link:hover{
     color:white;
 }
-
+.skills__name{
+    text-align: center;
+}
+.miniproject, .menuproject{
+    margin: 7% 0;
+}
 //theme light
 
 

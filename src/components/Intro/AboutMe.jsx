@@ -1,9 +1,12 @@
 
-import Intro from './Intro/Intro';
+
+import BasicInfo from './BasicInfo';
+import Intro from './Intro';
 export default function AboutMe(){
     return(
         <div>
             <Intro/>
+            <BasicInfo/>
         </div>
     )
 }

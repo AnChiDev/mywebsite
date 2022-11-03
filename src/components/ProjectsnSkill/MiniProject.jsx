@@ -56,7 +56,7 @@ class MiniProject extends Component{
         const menumini= this.state.smallproducts.map((sproduct)=>{
             //col-12 col-md-4 col-lg-6 m-4
               return (
-                  <div key ={sproduct.id} className=" col col-6 col-md-4 col-lg-3 m-4 mx-auto ">
+                  <div key ={sproduct.id} className=" col col-6 col-md-4 col-lg-3 m-4 mx-auto animate menumini"  data-animate="slideInLeft 2s">
                      
                   <ShowMinisproducts sproduct = {sproduct} />
                  
@@ -75,10 +75,13 @@ class MiniProject extends Component{
 return(
     <div className='container'>
     <div className="row">
-       
-        {menumini}
-        </div>
+    <h1 className="mt-5 animate miniproject__title"
+          data-animate="tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both"> Mini Projects</h1>
 
+        </div>
+<div className ="row miniproject">
+{menumini}
+</div>
     </div>
 )
 }

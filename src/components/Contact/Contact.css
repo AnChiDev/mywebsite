@@ -1,10 +1,67 @@
 .button__contact{
-    
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     font-size: 16px;
     border-radius: 10%;
     outline: 0;
+    padding: 1vh;
+}
+.contact__title{
+  margin-top: 7%;
 }
 .button__contact:hover{
-    background-color: #FFE7CC;
+    background: var(--clr-pink-2);
 }
+#contact h4, h2{
+    font-family: 'Pacifico', sans-serif;
+}
+.mycontact{
+   text-align: left;
+}
+.mycontact p{
+    margin-top: 2vh;
+}
+
+.contact-info{
+    background-color:rgba(220, 221, 225,0.5);
+    border: solid 1px #c8d6e5;
+    border-radius:25px;
+    padding : 20px;
+    
+}
+
+
+@media screen and (min-width: 480px) {
+    .contact-info{
+      flex-direction: row;
+      align-items: center;
+    }
+    h4{
+        text-align: center;
+
+    }
+    h2{
+        padding: 5% 0;
+    }
+   
+}
+    
+  @media screen and (min-width: 768px) {
+    .contact-form{
+        width: 100%;
+    }
+  }
+  
+  
+  @media screen and (min-width: 992px) {
+    .contact {
+      margin-top: 0;
+    }
+    h4 {
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+    .contact-title .underline {
+      margin-left: auto;
+    }
+  }
+  
