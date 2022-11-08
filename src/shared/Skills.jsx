@@ -63,6 +63,12 @@ export const SKILLS =[
         name: 'Mongo DB'
         
     },
+    {
+        id: 10,
+        image:'assets/images/skill/Java.svg',
+        name: 'Java'
+        
+    },
 ]
 export const CONTENTS=[
 
@@ -82,7 +88,7 @@ export const CONTENTS=[
 },
 {
     id:3,
-    substance:'Basic level with NodeJS, Express, MongoDB'
+    substance:'Basic level with NodeJS, Java, MongoDB'
 },
 {
     id:4,

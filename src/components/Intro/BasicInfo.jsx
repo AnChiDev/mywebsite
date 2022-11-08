@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./basicinfo.css";
-
 function BasicInfo() {
   return (
     <div>
@@ -15,7 +14,7 @@ function BasicInfo() {
         </div>
 
    
-        <div className="row">
+        <div className="row about-content fs-6">
           <div
             className="col-12 col-md-6 col-lg-6  animate about-info"
             data-animate="slideInLeft 2s"

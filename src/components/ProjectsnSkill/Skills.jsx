@@ -13,7 +13,7 @@ function RenderIcon({ skill }) {
     delay={200}
     duration={500}
   >
-        <Card className="m-2 skills__card">
+        <Card className="m-2 skills__card" >
         <Button color="primary" outline >
         <img src={skill.image} alt="skill" width="120px" height="120px" className ="skills__icon" />
       </Button>  

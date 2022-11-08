@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import MyContact from "./components/Contact/Contact";
-import Intro from "./components/Intro/Intro";
+
 
 import Headers from './components/Header/Header'
 import MyProjects from './components/ProjectsnSkill/MyProjects'
 import MiniProject from "./components/ProjectsnSkill/MiniProject";
 import Skill from "./components/ProjectsnSkill/Skills";
-import Footer from "./components/Footer";
+import Footer from './components/HeaderFooter/Footer'
 
 import AboutMe from "./components/Intro/AboutMe";
 

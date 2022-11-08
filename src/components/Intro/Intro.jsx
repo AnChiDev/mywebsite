@@ -37,8 +37,7 @@ class Intro extends Component {
                 <p className="mb-8 leading-relaxed text-xl">
 
                   <br />I enjoy building software that makes peoples' lives
-                  easier by writing elegant, performant, and maintainable
-                  frontend code. I also love everything that's beautiful and
+                  easier by writing elegant, performant. I also love everything that's beautiful and
                   colorful.
                 </p>
                 <h4>

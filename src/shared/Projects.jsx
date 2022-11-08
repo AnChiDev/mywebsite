@@ -32,8 +32,9 @@ export const PROJECTS=[
         name: "tMovies",
         image: 'assets/images/Projects/movie.png',
         title: 'Enjoy movies and TVseries with tMovies',
-   
-        content:'Enjoy movies and TVseries with tMovies'
+        source: 'https://github.com/anchicode/movie',
+        view: 'https://tmovie-react.vercel.app/',
+        content:'I make a simple app that searches for any movie/tv series trailers. I use ReactJs, SCSS and call API from "https://www.themoviedb.org, deploy on Vercel"'
     },
 ]
 export const MINIPROJECTS=[
