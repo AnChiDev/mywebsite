@@ -28,7 +28,7 @@ export const SKILLS =[
     {
         id: 5,
         image: 'assets/images/skill/sql.png',
-        name: 'SQL server'
+        name: 'SQL'
     },
     {
         id: 6,

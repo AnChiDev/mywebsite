@@ -12,7 +12,7 @@ import './skills.css';
 
 function ShowMinisproducts({sproduct}){
     return(
-        <div>
+        <div className ="miniproject-container">
  <FadeTransform
         in
         transformProps={{
@@ -21,7 +21,7 @@ function ShowMinisproducts({sproduct}){
         delay={1000}
         duration={1000}
       >
-    <Card style={{backgroundColor:"rgba(253, 121, 168,0.1)", height:"600px"}}>
+    <Card className ="mini-card">
             
             <img
               alt="Card cap"
@@ -54,24 +54,16 @@ class MiniProject extends Component{
     
     render(){
         const menumini= this.state.smallproducts.map((sproduct)=>{
-            //col-12 col-md-4 col-lg-6 m-4
+  
               return (
-                  <div key ={sproduct.id} className=" col col-6 col-md-4 col-lg-3 m-4 mx-auto animate menumini"  data-animate="slideInLeft 2s">
+                  <div key ={sproduct.id} className=" col-12 col-md-3 col-lg-3 m-4 mx-auto animate menumini"  data-animate="slideInLeft 2s">
                      
                   <ShowMinisproducts sproduct = {sproduct} />
                  
                   </div>
               )
           })
-          /*
-           id: 6,
-        name: "Todo List",
-        image: 'assets/images/sproducts/todolist.gif',
-        title: 'My Todo List',
-        source:'https://github.com/anchicode/mytodolist/tree/master',
-        view:'https://anchicode.github.io/mytodolist/',
-        content: 
-          */
+
 return(
     <div className='container'>
     <div className="row">

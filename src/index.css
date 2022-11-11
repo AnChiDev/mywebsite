@@ -63,7 +63,7 @@ body {
   background-image: var(--background-image-1);
   color: var(--clr-black-1);
   line-height: 1.5;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 img:not(.nav-logo) {
@@ -116,6 +116,7 @@ h4 {
   p {
     margin-bottom: 1.25rem;
   }
+ 
 }
 
 @media screen and (min-width: 800px) {

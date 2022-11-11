@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 import { PROJECTS } from "../../shared/Projects";
 import { FadeTransform } from "react-animation-components";
-import MiniProject from "./MiniProject";
+
 import "./skills.css";
 
 function RenderImg({ project }) {
@@ -25,15 +25,14 @@ function RenderImg({ project }) {
    
       <Card style={{ backgroundColor: "rgba(253, 121, 168,0.1)" }}>
         <div className="row animate"  data-animate="slideInLeft 2s">
-          <div className="col-8">
+          <div className="col-12 col-md-8 col-lg-8 project-container">
             <img
               alt="Card cap"
               src={project.image}
-              width="100%"
-              height="450px"
+     
             />
           </div>
-          <div className="col-4">
+          <div className="col-12 col-md-4 col-lg-4">
             <CardBody>
               <CardTitle tag="h4">{project.name}</CardTitle>
             </CardBody>
@@ -77,7 +76,7 @@ class Projects extends Component {
   }
   render() {
     const menu = this.state.projects.map((project) => {
-      //col-12 col-md-4 col-lg-6 m-4
+   
       return (
         <div key={project.id} className="col-12 mt-4 mx-auto">
           <RenderImg project={project} />

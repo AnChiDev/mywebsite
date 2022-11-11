@@ -1,41 +1,141 @@
-.skills__title, .project__title , .miniproject__title{
-    font-family: 'Pacifico', sans-serif;
-    margin: 5% 0;
-}
-.project__link, .miniproject__link{
-    text-decoration: none;
-    color: black;
-}
-.project__link:hover, .miniproject__link:hover{
-    color:white;
-}
-.skills__name{
-    text-align: center;
-}
-.miniproject, .menuproject{
-    margin: 7% 0;
-}
 
-//theme light
-
-
-//theme dark
-
-
-body[data-theme=dark] .miniproject__button, body[data-theme=dark] .project__button{
-    background-color:  rgba(0, 46, 148, 0.5);
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    .skills__title, .project__title , .miniproject__title{
+        font-family: 'Pacifico', sans-serif;
+        margin: 5% 0;
+    }
+    .project__link, .miniproject__link{
+        text-decoration: none;
+        color: black;
+    }
+    .project__link:hover, .miniproject__link:hover{
+        color:white;
+    }
+    .skills__name{
+        text-align: center;
+    }
+    .miniproject, .menuproject{
+        margin: 7% 0;
+    }
     
+    body[data-theme=dark] .miniproject__button, body[data-theme=dark] .project__button{
+        background-color:  rgba(0, 46, 148, 0.5);
+        
+    }
+    body[data-theme=dark] .project__link, body[data-theme=dark] .miniproject__link {
+        color: white;
+    }
+ 
+    
+    
+    body[data-theme=dark] .skills__card, body[data-theme=dark] .skills__content{
+        background-color: rgba(0, 46, 148, 0.5);
+    }
+    
+    body[data-theme=dark] .skills__name,body[data-theme=dark] .skills__content{
+        background-color: rgba(0, 46, 148, 0.5);
+    }
+   
+    .skills__name{
+        word-break: inherit;
+    }
+    .skills__icon{
+        margin-bottom: 15%;
+    }
+.skills__icon{
+    width:90px;
+    height: 90px;
 }
-body[data-theme=dark] .project__link, body[data-theme=dark] .miniproject__link {
-    color: white;
+.skills__card{
+    margin-bottom: 15%;
 }
-//skills
+  .miniproject-container .mini-card{
+    background-color:rgba(253, 121, 168,0.1);
+     height:680px 
+  }
+}
+        /*Iphone(480 x 640)*/
+        @media screen and (min-width: 320px){
+            body[data-theme=dark] .miniproject__button, body[data-theme=dark] .project__button{
+                background-color:  rgba(0, 46, 148, 0.5);
+                
+            }
+            body[data-theme=dark] .project__link, body[data-theme=dark] .miniproject__link {
+                color: white;
+            }
+     
+            
+            
+            body[data-theme=dark] .skills__card, body[data-theme=dark] .skills__content{
+                background-color: rgba(0, 46, 148, 0.5);
+            }
+            
+            body[data-theme=dark] .skills__name,body[data-theme=dark] .skills__content{
+                background-color: rgba(0, 46, 148, 0.5);
+            }
+            .skills__title, .project__title , .miniproject__title{
+                font-family: 'Pacifico', sans-serif;
+                margin: 5% 0;
+            }
+            .content{
+                margin-top: 5%;
+            }
+            .skills__icon{
+                width: 90px;
+                height: 90px
+            }
+            .skills__card{
+                margin-bottom: 15%;
+            }
+            .miniproject-container .mini-card{
+     
+                height:580px 
+             }
+        }
+        /*Tablet nhỏ(480 x 640)*/
+        @media screen and (min-width: 480px){
+            .skills__icon{
+                width: 100px;
+                height: 100px;
+            }
+            .miniproject-container .mini-card{
+     
+                 height:680px 
+              }
+            
+         
+        }
+        /*Ipad dọc(768 x 1024)*/
+        @media screen and (min-width: 768px){
+            .skills__icon{
+                width: 90px;
+                height: 90px;
+            }
+            .skills__card{
+                width: 110%;
+                height: 110%;
+            }
+            .skills__name{
+                font-size: 80%;
+            }
+            .skills__title{
+                margin-bottom: 0
+            }
+            .project-container img{
+                width: 100%;
+                height: 250px;
+            }
 
-
-body[data-theme=dark] .skills__card, body[data-theme=dark] .skills__content{
-    background-color: rgba(0, 46, 148, 0.5);
-}
-
-body[data-theme=dark] .skills__name,body[data-theme=dark] .skills__content{
-    background-color: rgba(0, 46, 148, 0.5);
-}
+        }
+        /*Ipad ngang(1024 x 768)*/
+        @media screen and (min-width: 1024px){
+            .project-container img{
+                width: 100%;
+                height: 400px;
+            }
+            .miniproject-container .mini-card{
+                 height:600px 
+              }
+        }
+   

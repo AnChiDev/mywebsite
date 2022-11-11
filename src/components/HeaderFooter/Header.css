@@ -1,18 +1,6 @@
-.head{
-font-size: 2.3vh;
-background-color: white;
-
-}
-.head .navbar__brand{
-    font-size: 3.5vh;
-    font-weight: bold;
-    color: #6F38C5;
-    font-family: 'Pacifico', sans-serif;
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
     
-}
-.head .dropdown{
-    font-size: 2.3vh;
-}
 body[data-theme=light] .head{
     background-color: white;
 
@@ -30,3 +18,43 @@ body[data-theme=dark] .head{
     background-color: #3C4048;
 
 }
+.head{
+    font-size: 2.3vh;
+    background-color: white;
+    }
+    
+.head .navbar__brand{
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: #6F38C5;
+    font-family: 'Pacifico', sans-serif;
+    
+}
+.head .dropdown{
+    font-size: 2.3vh;
+}
+.head .navbar__brand{
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: #6F38C5;
+    font-family: 'Pacifico', sans-serif;
+}
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+    .head{
+        width: 100%;
+    }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+    
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+  
+}
+

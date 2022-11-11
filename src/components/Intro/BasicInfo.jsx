@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./basicinfo.css";
 function BasicInfo() {
   return (
@@ -16,7 +16,7 @@ function BasicInfo() {
    
         <div className="row about-content fs-6">
           <div
-            className="col-12 col-md-6 col-lg-6  animate about-info"
+            className="col-12 col-md-6 col-lg-6 fs-6 animate about-info"
             data-animate="slideInLeft 2s"
           >
             <h4>Get to know me!</h4>
@@ -25,7 +25,7 @@ function BasicInfo() {
               administrative staff. I started learning how to code in January
               2022.
               <br />I enjoy coding and the challenge of learning something new
-              everyday. My goal is to pursue a career in the field of front-end
+              everyday. My goal is to pursue a career in the field of full-stack
               development.
             </p>
           </div>

@@ -4,7 +4,7 @@ import "./Contact.css";
 
 export function MyContact() {
   return (
-    <div className="container" id="contact">
+    <div className="container mx-auto" id="contact">
       <div className="row">
         <h2
           className="animate contact__title"

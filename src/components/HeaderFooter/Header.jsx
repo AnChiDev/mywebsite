@@ -10,13 +10,13 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
+  DropdownItem
 } from 'reactstrap';
 import DayNightToggle from "react-day-and-night-toggle";
 import "./Header.css";
 
 export default function Header() {
-  //change theme
+
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem("data-theme") === "dark" ? true : false
   );
@@ -45,10 +45,11 @@ export default function Header() {
   
     }
   };
-  //nav collapse
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-  //scroll
+
+  const [collapsed, setCollapsed] = useState(true);
+
+  const toggleNavbar = () => setCollapsed(!collapsed);
+
   const [fixedNavbar, setFixedNavbar] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -60,12 +61,14 @@ export default function Header() {
   };
   return (
     <div>
-    <div className="container">
-     <Navbar expand="md"  fixed="top"  className="head" container="md" >
+     <Navbar expand="md" container="lg" className="head">
         <NavbarBrand href="#home" className ="navbar__brand">  Minh Tran </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
+       
+        <NavbarToggler onClick={toggleNavbar} className="me-2" />
+       
+        <Collapse isOpen={!collapsed} navbar>
+        
+        <Nav className="me-auto" navbar>
             <NavItem>
               <NavLink href="#home">Home</NavLink>
             </NavItem>
@@ -81,22 +84,28 @@ export default function Header() {
               <DropdownMenu right className ="dropdown">
                 <DropdownItem>   <NavLink href="#myprojects">My Projects</NavLink></DropdownItem>
                 <DropdownItem> <NavLink href="#skills">Skills</NavLink></DropdownItem>
-               
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
               <NavLink href="#contact">Contact</NavLink>
             </NavItem>
-          </Nav>
-          <DayNightToggle
-            size={32}
+           
+          </Nav> 
+        
+        </Collapse>
+        <Nav>
+            <DayNightToggle
+           size={18}
             onChange={handleChangeTheme}
             checked={isDarkMode}
+            className="day-night-button mx-auto "
+            
           />
-        </Collapse>
+            </Nav>
       </Navbar>
+     
+</div>
 
-    </div>
-    </div>
+
   );
 }

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import MyContact from "./components/Contact/Contact";
-
-
-import Headers from './components/Header/Header'
+import Header from "./components/HeaderFooter/Header";
 import MyProjects from './components/ProjectsnSkill/MyProjects'
 import MiniProject from "./components/ProjectsnSkill/MiniProject";
 import Skill from "./components/ProjectsnSkill/Skills";
@@ -42,14 +40,16 @@ function App() {
 
       <div className="App">
 
-        <Headers/>
+        <Header/>
+
 
         <AboutMe/>
-         <Skill/>
-         <MyProjects/>
+  
+       <Skill/>
+        <MyProjects/>
          <MiniProject/>
          <MyContact/>
-         <Footer/>
+         <Footer/> 
 
       </div>
 

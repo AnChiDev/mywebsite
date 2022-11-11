@@ -1,4 +1,7 @@
-.button__contact{
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+  .button__contact{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     font-size: 16px;
     border-radius: 10%;
@@ -28,40 +31,51 @@
     padding : 20px;
     
 }
-
-
-@media screen and (min-width: 480px) {
-    .contact-info{
-      flex-direction: row;
-      align-items: center;
-    }
-    h4{
-        text-align: center;
-
-    }
-    h2{
-        padding: 5% 0;
-    }
    
 }
-    
-  @media screen and (min-width: 768px) {
-    .contact-form{
-        width: 100%;
-    }
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+  #contact{
+    margin: 7% 0;
   }
-  
-  
-  @media screen and (min-width: 992px) {
-    .contact {
-      margin-top: 0;
-    }
-    h4 {
-      text-align: left;
-      margin-bottom: 4rem;
-    }
-    .contact-title .underline {
-      margin-left: auto;
-    }
+  .contact__title{
+    margin-bottom: 7%;
   }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+  .contact-info{
+    flex-direction: row;
+    align-items: center;
+  }
+  h4{
+      text-align: center;
+
+  }
+  h2{
+      padding: 5% 0;
+  }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+  .contact-form{
+    width: 100%;
+}
+.contact__title{
+  margin:0;
+}
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+  .contact {
+    margin-top: 0;
+  }
+  h4 {
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  .contact-title .underline {
+    margin-left: auto;
+  }
+}
   
