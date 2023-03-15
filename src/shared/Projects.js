@@ -4,7 +4,7 @@ export const PROJECTS=[
         name: "First website",
         image: 'assets/images/Projects/Anchi.png',
         title: 'First website',
-        source:'https://github.com/anchicode/WEB101x/tree/asm4',
+        source:'https://github.com/anchidev/WEB101x/tree/asm4',
         view:'https://anchicode.github.io/WEB101x/',
         content: 'This is my first website - my first product. It is a demo a shopping website.I use HTML, CSS, Bootstrap and deploy on github. '
     },
@@ -14,7 +14,7 @@ export const PROJECTS=[
         name: "Human Resource",
         image: 'assets/images/Projects/reacthrm.png',
         title: 'Quản lý nhân sự',
-        source:'https://github.com/anchicode/hrm',
+        source:'https://github.com/anchidev/hrm',
         view:'https://hrmapp.netlify.app/home',
         content:'This is my assignment with React JS, Redux, call API and deploy on Netlify'
     },
@@ -23,7 +23,7 @@ export const PROJECTS=[
         name: "My Porfolio",
         image: 'assets/images/Projects/myweb.gif',
         title: 'My personal website',
-        source:'https://github.com/anchicode/mywebsite',
+        source:'https://github.com/anchidev/mywebsite',
         view:'#',
         content:'This is my personale website with React JS, deploy on Netlify'
     },
@@ -32,7 +32,7 @@ export const PROJECTS=[
         name: "tMovies",
         image: 'assets/images/Projects/movie.png',
         title: 'Enjoy movies and TVseries with tMovies',
-        source: 'https://github.com/anchicode/movie',
+        source: 'https://github.com/anchidev/movie',
         view: 'https://tmovie-react.vercel.app/',
         content:'I make a simple app that searches for any movie/tv series trailers. I use ReactJs, SCSS and call API from "https://www.themoviedb.org, deploy on Vercel"'
     },
@@ -43,7 +43,7 @@ export const MINIPROJECTS=[
         name: "Todo List",
         image: 'assets/images/Projects/todolist.png',
         title: 'My Todo List',
-        source:'https://github.com/anchicode/mytodolist/tree/master',
+        source:'https://github.com/anchidev/mytodolist/tree/master',
         view:'https://anchicode.github.io/mytodolist/',
         content: 'I use HTML, CSS and JS. I think it is very helpful to manage all tasks each day.'
     },
@@ -52,7 +52,7 @@ export const MINIPROJECTS=[
         name: "DailyNews",
         image: 'assets/images/Projects/MyDailyNews.png',
         title: 'Reading News Everyday',
-        source:'https://github.com/anchicode/PRF192x',
+        source:'https://github.com/anchidev/PRF192x',
         view:'https://mydailynews.vercel.app/',
         content:'Small product to reading news. I am using Javascript (fetch api from Gnews), HTML and CSS'
     },
@@ -61,7 +61,7 @@ export const MINIPROJECTS=[
         name: "Spotify",
         image: 'assets/images/Projects/chillwithme.png',
         title: 'Chill out with me',
-        source:'https://github.com/anchicode/spotify/tree/master',
+        source:'https://github.com/anchidev/spotify/tree/master',
         view:'https://chilloutwithmusic.netlify.app/',
         content:'A product to listening music same as Spotify. Web is built with ReactJS, Tailwindcss, deployed on Netlify'
     },
@@ -70,7 +70,7 @@ export const MINIPROJECTS=[
         name: "Creave",
         image: 'assets/images/Projects/creave.png',
         title: 'WEB-Assignment',
-        source:'https://github.com/anchicode/crevea',
+        source:'https://github.com/anchidev/crevea',
         view:'https://creaveeducation.netlify.app/',
         content:'A Responsive Website with mobile-first design.  Web is built with HTML, CSS, deployed on Netlify  '
     },
