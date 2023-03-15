@@ -44,7 +44,7 @@ export const MINIPROJECTS=[
         image: 'assets/images/Projects/todolist.png',
         title: 'My Todo List',
         source:'https://github.com/anchidev/mytodolist/tree/master',
-        view:'https://anchicode.github.io/mytodolist/',
+        view:'https://anchidev.github.io/mytodolist/',
         content: 'I use HTML, CSS and JS. I think it is very helpful to manage all tasks each day.'
     },
     {
