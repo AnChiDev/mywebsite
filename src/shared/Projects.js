@@ -5,7 +5,7 @@ export const PROJECTS=[
         image: 'assets/images/Projects/Anchi.png',
         title: 'First website',
         source:'https://github.com/anchidev/WEB101x/tree/asm4',
-        view:'https://anchicode.github.io/WEB101x/',
+        view:'https://anchidev.github.io/WEB101x/',
         content: 'This is my first website - my first product. It is a demo a shopping website.I use HTML, CSS, Bootstrap and deploy on github. '
     },
  
